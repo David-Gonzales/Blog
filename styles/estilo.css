@@ -1,0 +1,119 @@
+.titulo {
+	color:orange;
+	letter-spacing: 3px;
+	word-spacing: 10px;
+}
+h3.autor{
+	position:relative;
+	left:620px;
+	width:180px;
+	color:white;
+	border-style:dashed;
+	border-color:blue;
+}
+.cuerpo{
+	background-image:url("ficsa.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-color:#D6EFFF;
+}
+.intro {
+	float:left;
+	margin-right:10px;
+	height: 100px; width: 670.5px;
+	background-color: LightSkyBlue;
+	overflow:auto;
+}
+.foto{
+	border: 3px solid white;
+    border-radius: 50%;
+}
+#first img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin:5px;
+}
+.ley {
+	display: table-cell;
+	vertical-align: middle;
+	text-indent: 30px;
+}
+
+.velocidades{
+	clear:both;
+	height:250px; width:670.5px;
+	background-color: #A2D453;
+	
+}
+.velocidades h4{
+	color:#5E5E5E;
+}
+.vel_media{
+	
+	vertical-align:middle;
+	color:white;
+	text-shadow:5px 3px 4px grey;
+}
+.formulaVM{
+	color:white;
+	text-shadow:5px 3px 4px grey;
+}
+.vel_inst{
+	
+	vertical-align: middle;
+	color:white;
+	font-size: 16px;
+	text-shadow: 5px 2px 4px grey;
+}
+.formulaVI{
+	color:white;
+	text-shadow:5px 3px 4px grey;
+}
+.aceleraciones{
+	height: 280px; width: 670.5px;
+	background-color: #FAB387;
+	
+	
+}
+.aceleraciones h4{
+	color:#5E5E5E;
+}
+.acel_media{
+	
+	vertical-align: middle;
+	color:white;
+	font-size: 16px;
+	text-shadow: 5px 2px 4px grey;
+}
+.formulaAM{
+	color:white;
+	font-size: 16px;
+	text-shadow: 5px 2px 4px grey;
+}
+.acel_inst{
+	
+	vertical-align: middle;
+	color:white;
+	font-size: 16px;
+	text-shadow: 5px 2px 4px grey;
+}
+.formulaAI1{
+	color:white;
+	font-size: 16px;
+	text-shadow: 5px 2px 4px grey;
+}
+.formulaAI2{
+	color:white;
+	font-size: 16px;
+	text-shadow: 5px 2px 4px grey;
+}
+.lista ul{
+	color:white;
+	list-style:square outside none;
+}
+img{
+	float:left;
+	height:100px;
+	margin-right:10px;
+}
