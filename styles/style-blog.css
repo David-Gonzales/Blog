@@ -26,11 +26,11 @@ p {
     margin: 0;
 }
 .img-circle {
-    border: 3px solid rgb(196, 196, 196);
+    border: 3px solid #3b464c;
     border-radius: 50%;
 }
 .section {
-    background-color: #fff;
+    background-color: #f1f1f1;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -38,7 +38,7 @@ p {
 .section2 {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 11px;
-    background-color: #fff;
+    background-color: #f1f1f1;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -69,8 +69,7 @@ table {
     
 }
 table2, th,td {
-    border: 2px solid #ffffff;
-    border-collapse: collapse;
+    border-collapse: separate;
     text-align: center;
     table-layout: fixed;
 }
