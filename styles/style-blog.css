@@ -25,8 +25,20 @@ p {
     padding: 0;
     margin: 0;
 }
+h2 {
+    font-size: 20pt;
+    font-family:'Font awesome 5 brands';
+    color: #3f565a;
+    text-align: center;
+    padding: 18px 0 5px 0;
+    margin: 0 0 2px 0;
+}
+h2 span{
+    border: 4px dashed #005b69;
+    padding: 10px;
+}
 .img-circle {
-    border: 3px solid #3b464c;
+    border: 0px solid #3b464c;
     border-radius: 50%;
 }
 .section {
