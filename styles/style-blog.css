@@ -44,6 +44,7 @@ p {
     border-radius: 10px;
 }
 
+
 #header img {
     display: block;
     width: 180px;
@@ -65,8 +66,14 @@ p {
 }
 table {
     width: 100%;
+    
 }
-
+table2, th,td {
+    border: 2px solid #ffffff;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
 table, th, td {
     border: 2px solid #cecece;
     border-collapse: collapse;
