@@ -43,8 +43,8 @@ body{
 }
 
 .header-content .img-perfil{
-    height: 300px;
-    width: 300px;
+    height: 330px;
+    width: 330px;
 }
 
 .title{
@@ -219,7 +219,7 @@ footer p{
     }
     .text-table{
         border-collapse: collapse;
-        font-size: 6pt;
+        font-size: 5pt;
         margin-top: 1rem;
         margin-right: 1rem;
     }
