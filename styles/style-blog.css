@@ -59,7 +59,7 @@ body{
 }
 
 .container{
-    width: 960px;
+    max-width: 960px;
     margin: auto;
     overflow: hidden;
     padding: 4rem 1 rem;
@@ -83,7 +83,7 @@ body{
 }
 .text-center{
     text-align: center;
-    margin: auto;
+    margin:auto;
 }
 
 .bg-light{
@@ -121,9 +121,9 @@ body{
 }
 
 .icon-video{
-    margin-top: 250px;
-    margin-left: 100px;
-    margin-right: 10px;
+    margin-top: 330px;
+    margin-left: 170px;
+    margin-right: 0px;
 }
 
 .formulario{
@@ -172,4 +172,119 @@ footer{
 
 footer p{
     margin: 0;
+}
+
+@media(max-width: 560px){
+    .header::after{
+        height: 50vh;
+    }
+
+    .header-content{
+        top: 5%;
+        margin-top: 5px;
+    }
+
+    .header-content .img-perfil{
+        height: 150px;
+        width: 150px;
+    }
+
+    .header-content .text{
+        display: none;
+    }
+
+    .grid-3, .grid-2{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .acerca .text{
+        padding: 1rem 1rem;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .icon-horario{
+        margin-top: 10px;
+    }
+    .icon-video{
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+    .horario{
+        padding: 1rem 0;
+        height: 100%;
+        width: 100%;
+    }
+    .text-table{
+        border-collapse: collapse;
+        font-size: 6pt;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+
+    .formulario{
+        margin-top: 5px;
+    }
+    input, textarea {
+        margin-right: 40px;
+        padding: 15px 10px 10px;
+        width: 80%;
+    }
+    
+    .enviar {
+        margin-right: 40px;
+    }
+}
+@media(max-height: 500px){
+    .header-content .text{
+        display: none;
+    }
+    .header-content{
+        margin-top: 0;
+    }
+    .acerca .text{
+        padding: 1rem 50px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .icon-horario{
+        display: none;
+        
+    }
+    .icon-video{
+        display: none;
+    
+    }
+    .grid-2{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .horario{
+        padding: 1rem 1rem;
+        height: 100%;
+        width: 100%;
+    }
+    .text-table{
+        border-collapse: collapse;
+        font-size: 9pt;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+
+    .formulario{
+        margin-top: 5px;
+    }
+    input, textarea {
+        margin-right: 40px;
+        padding: 15px 10px 10px;
+        width: 80%;
+    }
+    
+    .enviar {
+        margin-right: 40px;
+    }
 }
