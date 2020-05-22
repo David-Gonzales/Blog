@@ -1,54 +1,182 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>.:Inicio:.</title>
-	<link rel="stylesheet" href="styles/estilo.css">
+    <meta charset="UTF-8">
+    <title>Página Web David Gonzales</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styles/style-blog.css">
 </head>
-<body class="cuerpo">
-	<div class="encabezado">
-	<h1 class="titulo"><center>CINEM&Aacute;TICA - F&Iacute;SICA I</center></h1>
-	<h3 class="autor"><center>por David Gonzales</center></h3>
-	</div>
-	
-	<div id="first" class="intro"><img class="foto" src="images/newton.jpg" />
-		<h3 text-align="justify">Primera ley de Newton</h3>
-		<p class="ley" text-align="justify">Un objeto permanecer&aacute; en reposo o con movimiento 
-		rectil&iacute;neo uniforme <strong>(MRU)</strong> a menos que sobre él actúe una fuerza extrena.</p>
-	</div>
-	<div class="velocidades">
-		<h4 text-align="justify">Velocidad Media</h4>
-		<p class="vel_media" text-align="justify">El vector velocidad media se describe como la relación entre 
-		el cambio de posición del m&oacute;vil <strong>(r2-r1)</strong> y el tiempo empleado <strong>(t2-t1).</strong></p>
-		<p class="formulaVM" text-align="justify">V=(r2-r1)/(t2-t1)</p>
-		
-		<h4 text-align="justify">Velocidad Instant&aacute;nea</h4>
-		<p class="vel_inst" text-align="justify">Para definir la velocidad en un punto debemos acotar el tiempo (tiempo tienda a 0), 
-		se describe como el límite (t->0) de la relación entre el vector desplazamiento <strong>(Δr)</strong> 
-		y el intervalo de tiempo <strong>(Δt).</strong></p>
-		<p class="formulaVI" text-align="justify">V.int = lim(Δr/Δt) = dr/dt</p>
-	</div>
-		
-	<div class="aceleraciones">
-		<h4 text-align="justify">Aceleraci&oacute;n Media</h4>
-		<p class="acel_media" text-align="justify">El vector aceleraci&oacute;n media se describe como la relación entre 
-		el cambio de velocidad <strong>(v2-v1)</strong> y el tiempo empleado <strong>(t2-t1).</strong></p>
-		<p class="formulaAM" text-align="justify">a=(v2-v1)/(t2-t1)</p>
-		
-		<h4 text-align="justify">Aceleraci&oacute;n Instant&aacute;nea</h4>
-		<p class="acel_inst" text-align="justify">Para definir la aceleraci&oacute;n en un punto debemos acotar el tiempo (tiempo tienda a 0), 
-		se describe como el límite (t->0) de la relación entre el vector velocidad <strong>(Δv)</strong> 
-		y el intervalo de tiempo <strong>(Δt).</strong></p>
-		<p class="formulaAI1" text-align="justify">a.inst = lim(Δv/Δt) = dv/dt</p>
-		<p class="formulaAI2" text-align="justify">a.inst = d/dt (dr/dt) = d²r/dt²</p>
-	</div>
-	<div class="lista">
-		<ul>
-		<li>Movimiento Unidimensional</li>
-		<li>An&aacute;lisis Gr&aacute;fico de las ecuaciones de la Cinem&aacute;tica</li>
-		<li>Caida libre de los cuerpos</li>
-		<li>Movimiento Compuestosto</li>
-		<li>Movimiento Circular</li>
-		</ul>
-	</div>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content animated flash">
+            <img alt="Imagen de Perfil" class="img-perfil" src="images/perfil.jpg">
+            <div class="title">
+                Página Web Personal
+            </div>
+            <div class="text">
+                J. David Gonzales
+            </div>
+        </div>
+    </header>
+
+    <div class="acerca text-center">
+        <div>
+            <h3 class="title">ACERCA DE MÍ</h3>
+            <p class="text">¡Hola! Me presento, mi nombre es David pero mis amigos suelen llamarme "Rodo". Estudio
+                Ingeriería de Computación e Informática, soy programador junior y músico. Actualmente estoy cursando el
+                tercer ciclo de mi carrera.</p>
+            <p class="text">Estudiante de EPICI-UNPRG</p>
+        </div>
+
+        <div class="container grid-3">
+            <div>
+                <i class="fab fa-youtube fa-5x"></i>
+                <h3>Youtube</h3>
+                <div>
+                    Canal Musical
+                </div>
+            </div>
+
+            <div>
+                <i class="fab fa-facebook fa-5x"></i>
+                <h3>Facebook</h3>
+                <div>
+                    ¡Agrégame!
+                </div>
+            </div>
+
+            <div>
+                <i class="fab fa-instagram fa-5x"></i>
+                <h3>Instagram</h3>
+                <div>
+                    ¡Sígueme!
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Horario-->
+    <section class="horario bg-light">
+        <div class="container grid-2">
+
+            <div>
+                <i class="fas fa-calendar fa-5x"></i>
+            </div>
+
+            <div>
+                <h1 class="title"><span>MI HORARIO</span></h1>
+                <table class="text" cellpadding="10" cellspacing="10">
+                    <tr>
+                        <th bgcolor="#cfcfcf">Hora</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                        <th>Domingo</th>
+                    </tr>
+                    <tr>
+                        <td>10AM - 11AM</td>
+                        <td align="center" colspan="2">Ejercicios</td>
+                        <td colspan="3"></td>
+                        <td colspan="2">Ejercicios</td>
+                    </tr>
+                    <tr>
+                        <td>11AM - 2PM</td>
+                        <td colspan="3" rowspan="2">Practicar Inglés</td>
+                        <td rowspan="2">Ayunas y Ejercicios</td>
+                        <td colspan="2" rowspan="2">Practicar Inglés</td>
+                    </tr>
+                    <tr>
+                        <td>2PM - 3PM</td>
+                        <td>Lectura Libre</td>
+                    </tr>
+                    <tr>
+                        <td>4PM - 6PM</td>
+                        <td rowspan="3">Encode</td>
+                        <td>EBI</td>
+                        <td colspan="2" rowspan="3">Encode</td>
+                        <td>CBU-UNPRG</td>
+                        <td>Free</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6PM - 8PM</td>
+                        <td></td>
+                        <td rowspan="2">Lectura</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2">Inglés</td>
+                    </tr>
+                    <tr>
+                        <td>8PM - 11PM</td>
+                        <td>JDL</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!--Videos-->
+
+    <section>
+        <div class="container grid-2">
+            <h1 class="title"><span>MIS VIDEOS</span></h1>
+            <div class="container grid-2">
+                <div>
+                    <iframe height="400" width="600" src="https://www.youtube.com/embed/Pf4lF2ShCUY" allowfullscreen
+                        frameborder="0"></iframe>
+                </div>
+                <div>
+                    <iframe height="400" width="600" src="https://www.youtube.com/embed/i90sEt7HqqY" allowfullscreen
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <div>
+                <i class="fas fa-video fa-5x"></i>
+            </div>
+        </div>
+    </section>
+    <!-- Formulario -->
+    <section class="Formulario bg-ligth">
+        <div>
+            <h1><span>HABLEMOS...</span></h1>
+            <!--Carita en svg-->
+            <svg class="face" height="100" width="100">
+                <circle cx="50" cy="50" r="50" fill="#FDD835" />
+                <circle cx="50" cy="50" r="5" fill="#FF0000" />
+                <circle cx="30" cy="30" r="10" fill="#FFFFFF" />
+                <circle cx="70" cy="30" r="10" fill="#FFFFFF" />
+                <circle cx="30" cy="30" r="5" fill="#000000" />
+                <circle cx="70" cy="30" r="5" fill="#000000" />
+                <path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" stroke-width="5" fill="none" />
+            </svg>
+            <!--Fin de la carita-->
+            <form>
+                <input name="nombre" placeholder="Nombre" type="text" required /><br />
+                <input name="email" placeholder="Correo Electrónico" type="email" required /><br />
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <input type="submit" value="ENVIAR" class="submit" />
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center"></footer>
+        <p> Webpage David Gonzales &copy; 2020 - Todos los derechos reservados
+        <p>
+
 </body>
+
 </html>
