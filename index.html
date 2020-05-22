@@ -74,9 +74,9 @@
 
     <!--Horario-->
     <section class="horario bg-light">
-        <div class="container text-center" >
+        <div class="container text-center">
             <div class="grid-2">
-                <div>
+                <div class="icon-horario">
                     <i class="fas fa-calendar fa-10x"></i>
                 </div>
 
@@ -138,43 +138,36 @@
 
     <section>
         <div class="container grid-2">
-            <h1 class="title"><span>MIS VIDEOS</span></h1>
-            <div class="container grid-2">
+            <div class="video grid-2">
                 <div>
-                    <iframe height="240" width="360" src="https://www.youtube.com/embed/Pf4lF2ShCUY" allowfullscreen
-                        frameborder="0"></iframe>
-                </div>
-                <div>
-                    <iframe height="240" width="360" src="https://www.youtube.com/embed/i90sEt7HqqY" allowfullscreen
-                        frameborder="0"></iframe>
+                    <h1 class="title"><span>MIS VIDEOS</span></h1>
+                    <div>
+                        <iframe height="240" width="600" src="https://www.youtube.com/embed/Pf4lF2ShCUY" allowfullscreen
+                            frameborder="10"></iframe>
+                    </div>
+                    <div>
+                        <iframe height="240" width="600" src="https://www.youtube.com/embed/i90sEt7HqqY" allowfullscreen
+                            frameborder="10"></iframe>
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <i class="fas fa-video fa-5x"></i>
+            <div class="icon-video">
+                <i class="fas fa-video fa-10x"></i>
             </div>
         </div>
     </section>
     <!-- Formulario -->
-    <section class="Formulario text-center bg-ligth">
+    <section class="formulario text-center bg-light">
         <div>
             <h1 class="title"><span>HABLEMOS...</span></h1>
-            <!--Carita en svg-->
-            <svg class="face" height="100" width="100">
-                <circle cx="50" cy="50" r="50" fill="#FDD835" />
-                <circle cx="50" cy="50" r="5" fill="#FF0000" />
-                <circle cx="30" cy="30" r="10" fill="#FFFFFF" />
-                <circle cx="70" cy="30" r="10" fill="#FFFFFF" />
-                <circle cx="30" cy="30" r="5" fill="#000000" />
-                <circle cx="70" cy="30" r="5" fill="#000000" />
-                <path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" stroke-width="5" fill="none" />
-            </svg>
-            <!--Fin de la carita-->
-            <form>
+            <!--Carita-->
+            <i class="fas fa-smile-beam fa-5x"></i>
+            <form class="formulario text-center">
                 <input name="nombre" placeholder="Nombre" type="text" required /><br />
                 <input name="email" placeholder="Correo Electrónico" type="email" required /><br />
                 <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-                <input type="submit" value="ENVIAR" class="submit" />
+                <input type="submit" value="ENVIAR" class="enviar" />
             </form>
         </div>
     </section>

@@ -50,6 +50,7 @@ body{
 .title{
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
+    text-align: center;
 }
 
 .text{
@@ -75,7 +76,11 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
-
+.video grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+}
 .text-center{
     text-align: center;
     margin: auto;
@@ -95,12 +100,72 @@ body{
     padding: 2rem 0;
 }
 
+.horario{
+    padding: 2rem 0;
+}
+
+.video{
+    padding: 2rem 0;
+}
+
 .acerca .text{
     margin-top: 50px;
     margin-left: 150px;
     margin-right: 150px;
 }
 
+.icon-horario{
+    margin-top: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon-video{
+    margin-top: 250px;
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+.formulario{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20pt;
+    padding: 15px 10px 15px;
+    background-color: #f0f0f0;
+    color: #787575;
+    width: 100%;
+    outline: none;
+}
+.enviar {
+    background-color: #333;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+.enviar:hover {
+    background-color: #787575;
+}
+
+textarea {
+    height: 200px;
+}
+input, textarea {
+    margin-bottom: 20px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #787575;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+}
 footer{
     padding: 2.2rem;
 }
