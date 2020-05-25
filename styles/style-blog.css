@@ -8,6 +8,7 @@ body{
 .header::after{
     content: '';
     height: 100vh;
+    max-height: 800px;
     width: 100%;
     background-image: url(../images/fondo.jpg);
     background-size: cover;
@@ -33,18 +34,26 @@ body{
     position: absolute;
     z-index: 1;
     top: 10%;
-    left: 50%;
-    margin-top: 105px;
-    margin-left: -145px;
+    margin-top: 100px;
+    margin-left: 50%;
+    left: -180px;
     text-align: center;
     width: 300px;
     height: 350px;
     transition: all 500ms;
 }
 
-.header-content .img-perfil{
-    height: 330px;
-    width: 330px;
+.header-content{
+    margin-top: -120px;
+    height: 450px;
+    width: 400px;
+} 
+
+.img-perfil{
+    margin-top: 80px;
+    width: 100%;
+    max-width: 640px;
+    
 }
 
 .title{
@@ -76,11 +85,7 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
-.video grid-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1px;
-}
+
 .text-center{
     text-align: center;
     margin:auto;
@@ -101,13 +106,39 @@ body{
 }
 
 .horario{
-    padding: 2rem 0;
+    padding: 2rem 2rem;
+}
+
+.tabla{
+    padding: 2rem 2rem;
+}
+
+@media screen and (max-width:800px){
+    table{
+        width:100%;
+        display: block;
+        overflow-x: auto;
+        font-size: 48%;
+    }
+}
+@media screen and (max-width:400px){
+    table{
+        width:100%;
+        display: block;
+        overflow-x: auto;
+        font-size: 24%;
+    }
 }
 
 .video{
     padding: 2rem 0;
+    width: 100%;
 }
 
+.videoYT{
+    margin-top: 10px;
+    max-width: 640px;
+}
 .acerca .text{
     margin-top: 50px;
     margin-left: 150px;
@@ -115,25 +146,51 @@ body{
 }
 
 .icon-horario{
-    margin-top: 250px;
+    margin-top: 165px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .icon-video{
-    margin-top: 330px;
-    margin-left: 170px;
+    margin-top: 370px;
+    margin-left: 70px;
     margin-right: 0px;
 }
 
+@media screen and (max-width:800px){
+    .video{
+        width:100%;
+        display: block;
+    }
+    .icon-video{
+        display: none;
+    }
+}
+@media screen and (max-width:400px){
+    .video{
+        width:100%;
+        display: block;
+    }
+    .icon-video{
+        display: none;
+    }
+}
+
 .formulario{
+    padding: 3px 0;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
     font-size: 20pt;
-    padding: 15px 10px 15px;
     background-color: #f0f0f0;
     color: #787575;
+    width: 100%;
+}
+
+.form{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
     width: 100%;
     outline: none;
 }
@@ -172,119 +229,4 @@ footer{
 
 footer p{
     margin: 0;
-}
-
-@media(max-width: 560px){
-    .header::after{
-        height: 50vh;
-    }
-
-    .header-content{
-        top: 5%;
-        margin-top: 5px;
-    }
-
-    .header-content .img-perfil{
-        height: 150px;
-        width: 150px;
-    }
-
-    .header-content .text{
-        display: none;
-    }
-
-    .grid-3, .grid-2{
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .acerca .text{
-        padding: 1rem 1rem;
-        text-align: center;
-        margin-top: 10px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .icon-horario{
-        margin-top: 10px;
-    }
-    .icon-video{
-      margin: 0;
-      margin-bottom: 2rem;
-    }
-    .horario{
-        padding: 1rem 0;
-        height: 100%;
-        width: 100%;
-    }
-    .text-table{
-        border-collapse: collapse;
-        font-size: 5pt;
-        margin-top: 1rem;
-        margin-right: 1rem;
-    }
-
-    .formulario{
-        margin-top: 5px;
-    }
-    input, textarea {
-        margin-right: 40px;
-        padding: 15px 10px 10px;
-        width: 80%;
-    }
-    
-    .enviar {
-        margin-right: 40px;
-    }
-}
-@media(max-height: 500px){
-    .header-content .text{
-        display: none;
-    }
-    .header-content{
-        margin-top: 0;
-    }
-    .acerca .text{
-        padding: 1rem 50px;
-        text-align: center;
-        margin-top: 10px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .icon-horario{
-        display: none;
-        
-    }
-    .icon-video{
-        display: none;
-    
-    }
-    .grid-2{
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .horario{
-        padding: 1rem 1rem;
-        height: 100%;
-        width: 100%;
-    }
-    .text-table{
-        border-collapse: collapse;
-        font-size: 9pt;
-        margin-top: 1rem;
-        margin-right: 1rem;
-    }
-
-    .formulario{
-        margin-top: 5px;
-    }
-    input, textarea {
-        margin-right: 40px;
-        padding: 15px 10px 10px;
-        width: 80%;
-    }
-    
-    .enviar {
-        margin-right: 40px;
-    }
 }
