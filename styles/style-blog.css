@@ -5,9 +5,18 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.contenedor{
+    width:1366px;
+    max-width: 1920px;
+    margin:0 auto;
+    overflow: hidden;
+    
+}
+
 .header::after{
     content: '';
     height: 100vh;
+    max-height: 800px;
     width: 100%;
     background-image: url(../images/fondo.jpg);
     background-size: cover;
@@ -33,18 +42,21 @@ body{
     position: absolute;
     z-index: 1;
     top: 10%;
-    left: 50%;
-    margin-top: 105px;
-    margin-left: -145px;
+    margin-top: -120px;
+    margin-left: 50%;
+    left: -180px;
     text-align: center;
-    width: 300px;
-    height: 350px;
+    height: 450px;
+    width: 400px;
     transition: all 500ms;
 }
 
-.header-content .img-perfil{
-    height: 330px;
-    width: 330px;
+
+.img-perfil{
+    margin-top: 80px;
+    width: 100%;
+    max-width: 640px;
+    
 }
 
 .title{
@@ -62,7 +74,11 @@ body{
     max-width: 960px;
     margin: auto;
     overflow: hidden;
-    padding: 4rem 1 rem;
+    padding: 3rem 1rem;
+}
+
+.icon i{
+    color: white;
 }
 
 .grid-3{
@@ -76,11 +92,7 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
-.video grid-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1px;
-}
+
 .text-center{
     text-align: center;
     margin:auto;
@@ -101,13 +113,23 @@ body{
 }
 
 .horario{
-    padding: 2rem 0;
+    padding: 2rem 2rem;
+}
+
+.tabla{
+    padding: 2rem 2rem;
+
 }
 
 .video{
     padding: 2rem 0;
+    width: 100%;
 }
 
+.videoYT{
+    margin-top: -60px;
+    max-width: 640px;
+}
 .acerca .text{
     margin-top: 50px;
     margin-left: 150px;
@@ -115,28 +137,29 @@ body{
 }
 
 .icon-horario{
-    margin-top: 250px;
+    margin-top: 165px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .icon-video{
-    margin-top: 330px;
-    margin-left: 170px;
+    margin-top: 300px;
+    margin-left: 70px;
     margin-right: 0px;
 }
 
+
 .formulario{
+    padding: 1rem 0;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
     font-size: 20pt;
-    padding: 15px 10px 15px;
     background-color: #f0f0f0;
     color: #787575;
-    width: 100%;
-    outline: none;
+    margin: auto;
 }
+
 .enviar {
     background-color: #333;
     padding: 12px 45px;
@@ -174,23 +197,45 @@ footer p{
     margin: 0;
 }
 
-@media(max-width: 560px){
+
+@media only screen and (max-width:480px){
+    
+    .contenedor{
+        max-width: 480px;
+    }
+    
+    table{
+        width:100%;
+        display: block;
+        overflow-x: auto;
+        font-size: 44.5%;
+    }
+    .icon-horario{
+        display: none;
+    }
+    iframe{
+        width: 320px;
+        height: 280px;
+        margin: 5px;
+        
+    }
+    .icon-video{
+        display: none;
+    }
+    .img-perfil{
+        margin-top: 0;
+        height: 200px;
+        width: 200px;
+        max-width: 200px;
+    }
     .header::after{
-        height: 50vh;
+        height: 60vh;
     }
 
     .header-content{
-        top: 5%;
-        margin-top: 5px;
-    }
-
-    .header-content .img-perfil{
-        height: 150px;
-        width: 150px;
-    }
-
-    .header-content .text{
-        display: none;
+        top: 0.75rem;
+        margin-left: 21rem;
+        margin-top: 1rem;
     }
 
     .grid-3, .grid-2{
@@ -199,49 +244,93 @@ footer p{
     }
 
     .acerca .text{
-        padding: 1rem 1rem;
-        text-align: center;
-        margin-top: 10px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .icon-horario{
-        margin-top: 10px;
-    }
-    .icon-video{
-      margin: 0;
-      margin-bottom: 2rem;
-    }
-    .horario{
-        padding: 1rem 0;
-        height: 100%;
-        width: 100%;
-    }
-    .text-table{
-        border-collapse: collapse;
-        font-size: 5pt;
-        margin-top: 1rem;
-        margin-right: 1rem;
-    }
+        margin-top: 50px;
 
-    .formulario{
-        margin-top: 5px;
-    }
-    input, textarea {
-        margin-right: 40px;
-        padding: 15px 10px 10px;
-        width: 80%;
-    }
-    
-    .enviar {
-        margin-right: 40px;
     }
 }
-@media(max-height: 500px){
-    .header-content .text{
+
+@media screen and (max-width:720px){
+    .contenedor{
+        max-width:720px;
+    }
+    table{
+        width:100%;
+        display: block;
+        font-size: 56%;
+    }
+    .video{
+        max-width: 100%;
+    }
+
+    .icon-video{
         display: none;
     }
+}
+
+@media only screen and (min-width:720px) and (max-width:800px){
+    .contenedor{
+        max-width:800px;
+    }
+    
+    table{
+        width:100%;
+        display: block;
+        font-size: 73%;
+    }
+
+    .video{
+        max-width: 100%;
+    }
+
+    .icon-video{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:800px) and (max-width:880px){
+    .contenedor{
+        max-width:880px;
+    }
+    table{
+        width:100%;
+        display: block;
+        font-size: 90%;
+    }
+
+    .video{
+        max-width: 100%;
+    }
+
+    .icon-video{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:880px) and (max-width:960px){
+    .contenedor{
+        max-width:960px;
+    }
+    table{
+        width:100%;
+        display: block;
+    }   
+}
+
+@media only screen and (max-height: 500px){
+    .img-perfil{
+        margin-top: 0;
+        height: 250px;
+        width: 250px;
+    }
+    .header::after{
+        height: 140vh;
+    }
+
     .header-content{
+        top: 0.75rem;
+        margin-left: 21rem;
         margin-top: 0;
     }
     .acerca .text{
