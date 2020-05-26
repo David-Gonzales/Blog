@@ -5,6 +5,14 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.contenedor{
+    width:1366px;
+    max-width: 1920px;
+    margin:0 auto;
+    overflow: hidden;
+    
+}
+
 .header::after{
     content: '';
     height: 100vh;
@@ -113,94 +121,13 @@ body{
 
 }
 
-@media screen and (max-width:1000px){
-    table{
-        width:100%;
-        display: block;
-        overflow-x: auto;
-        font-size: 120%;
-    }
-    .icon-horario{
-        display: none;
-    }
-}
-
-@media screen and (max-width:900px){
-    table{
-        width:100%;
-        display: block;
-        overflow-x: auto;
-        font-size: 90%;
-    }
-    .icon-horario{
-        display: none;
-    }
-}
-
-@media screen and (max-width:800px){
-    table{
-        width:100%;
-        display: block;
-        overflow-x: auto;
-        font-size: 90%;
-    }
-    .icon-horario{
-        display: none;
-    }
-}
-
-@media screen and (max-width:700px){
-    table{
-        width:100%;
-        display: block;
-        overflow-x: auto;
-        font-size: 65%;
-    }
-    .icon-horario{
-        display: none;
-    }
-}
-@media screen and (max-width:600px){
-    table{
-        width:100%;
-        display: block;
-        overflow-x: auto;
-        font-size: 45%;
-    }
-    .icon-horario{
-        display: none;
-    }
-}
-@media screen and (max-width:500px){
-    table{
-        width:100%;
-        display: block;
-        overflow-x: auto;
-        font-size: 35%;
-    }
-    .icon-horario{
-        display: none;
-    }
-}
-@media screen and (max-width:400px){
-    table{
-        width:100%;
-        display: block;
-        overflow-x: auto;
-        font-size: 23%;
-    }
-    .icon-horario{
-        display: none;
-    }
-}
-
 .video{
     padding: 2rem 0;
     width: 100%;
 }
 
 .videoYT{
-    margin-top: 10px;
+    margin-top: -60px;
     max-width: 640px;
 }
 .acerca .text{
@@ -216,23 +143,14 @@ body{
 }
 
 .icon-video{
-    margin-top: 370px;
+    margin-top: 300px;
     margin-left: 70px;
     margin-right: 0px;
 }
 
-@media screen and (max-width:800px){
-    .video{
-        width:100%;
-        display: block;
-    }
-    .icon-video{
-        display: none;
-    }
-}
 
 .formulario{
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -277,4 +195,185 @@ footer{
 
 footer p{
     margin: 0;
+}
+
+
+@media only screen and (max-width:480px){
+    
+    .contenedor{
+        max-width: 480px;
+    }
+    
+    table{
+        width:100%;
+        display: block;
+        overflow-x: auto;
+        font-size: 44.5%;
+    }
+    .icon-horario{
+        display: none;
+    }
+    iframe{
+        width: 320px;
+        height: 280px;
+        margin: 5px;
+        
+    }
+    .icon-video{
+        display: none;
+    }
+    .img-perfil{
+        margin-top: 0;
+        height: 200px;
+        width: 200px;
+        max-width: 200px;
+    }
+    .header::after{
+        height: 60vh;
+    }
+
+    .header-content{
+        top: 0.75rem;
+        margin-left: 21rem;
+        margin-top: 1rem;
+    }
+
+    .grid-3, .grid-2{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .acerca .text{
+        margin-top: 50px;
+
+    }
+}
+
+@media screen and (max-width:720px){
+    .contenedor{
+        max-width:720px;
+    }
+    table{
+        width:100%;
+        display: block;
+        font-size: 56%;
+    }
+    .video{
+        max-width: 100%;
+    }
+
+    .icon-video{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:720px) and (max-width:800px){
+    .contenedor{
+        max-width:800px;
+    }
+    
+    table{
+        width:100%;
+        display: block;
+        font-size: 73%;
+    }
+
+    .video{
+        max-width: 100%;
+    }
+
+    .icon-video{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:800px) and (max-width:880px){
+    .contenedor{
+        max-width:880px;
+    }
+    table{
+        width:100%;
+        display: block;
+        font-size: 90%;
+    }
+
+    .video{
+        max-width: 100%;
+    }
+
+    .icon-video{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:880px) and (max-width:960px){
+    .contenedor{
+        max-width:960px;
+    }
+    table{
+        width:100%;
+        display: block;
+    }   
+}
+
+@media only screen and (max-height: 500px){
+    .img-perfil{
+        margin-top: 0;
+        height: 250px;
+        width: 250px;
+    }
+    .header::after{
+        height: 140vh;
+    }
+
+    .header-content{
+        top: 0.75rem;
+        margin-left: 21rem;
+        margin-top: 0;
+    }
+    .acerca .text{
+        padding: 1rem 50px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .icon-horario{
+        display: none;
+        
+    }
+    .icon-video{
+        display: none;
+    
+    }
+    .grid-2{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .horario{
+        padding: 1rem 1rem;
+        height: 100%;
+        width: 100%;
+    }
+    .text-table{
+        border-collapse: collapse;
+        font-size: 9pt;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+
+    .formulario{
+        margin-top: 5px;
+    }
+    input, textarea {
+        margin-right: 40px;
+        padding: 15px 10px 10px;
+        width: 80%;
+    }
+    
+    .enviar {
+        margin-right: 40px;
+    }
 }
