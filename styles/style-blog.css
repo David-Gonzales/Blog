@@ -69,6 +69,10 @@ body{
     padding: 3rem 1rem;
 }
 
+.icon i{
+    color: white;
+}
+
 .grid-3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
