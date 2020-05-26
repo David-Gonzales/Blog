@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Página Web David Gonzales</title>
+    <title>Pagina Web David Gonzales</title>
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
@@ -17,179 +17,188 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 
     <!--ANIMATE CSS-->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
+    <!--Meta viewport-->
+    <meta name="viewport" content="width=device-width"/>
     <!--Custom CSS-->
     <link rel="stylesheet" href="styles/style-blog.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-content animate__animated animate__rubberBand animate__delay-2s">
-            <img alt="Imagen de Perfil" class="img-perfil" src="images/perfil.jpg">
-            <div class="title">
-                Página Web Personal
-            </div>
-            <div class="text">
-                J. David Gonzales
-            </div>
-        </div>
-    </header>
 
-    <div class="acerca text-center">
-        <div>
-            <h3 class="title">ACERCA DE MÍ</h3>
-            <p class="text">¡Hola! Me presento, mi nombre es David pero mis amigos suelen llamarme "Rodo". Estudio
-                Ingeriería de Computación e Informática, soy programador junior y músico. Actualmente estoy cursando el
-                tercer ciclo de mi carrera.</p>
-            <p class="text">Estudiante de EPICI-UNPRG</p>
-        </div>
-
-        <div class="container grid-3">
-            <div>
-                <a href="https://www.youtube.com/channel/UCLRVVeS4_7g9XhH6I-8cK5A?view_as=subscriber">
-                    <i class="fab fa-youtube fa-5x"></i>
-                </a>
-                <h3>Youtube</h3>
-                <div>
-                    Canal Musical
+    <div class="contenedor">
+        <!-- Header -->
+        <header class="header">
+            <section class="header-content animate__animated animate__rubberBand animate__delay-2s">
+                <img alt="Imagen de Perfil" class="img-perfil" src="images/foto_perfil2.jpg">
+                <div class="title">
+                    Página Web Personal
                 </div>
-            </div>
-
-            <div>
-                <a href="https://web.facebook.com/davibgb">
-                    <i class="fab fa-facebook fa-5x"></i>
-                </a>
-                <h3>Facebook</h3>
-                <div>
-                    ¡Agrégame!
+                <div class="text">
+                    J. David Gonzales
                 </div>
-            </div>
+            </section>
+        </header>
 
-            <div>
-                <a href="https://www.instagram.com/jdavidgonzales25/">
-                    <i class="fab fa-instagram fa-5x"></i>
-                </a>
-                <h3>Instagram</h3>
+        <section class="bg-dark">
+            <div class="acerca text-center">
                 <div>
-                    ¡Sígueme!
+                    <h3 class="title">ACERCA DE MÍ</h3>
+                    <p class="text">¡Hola! Me presento, mi nombre es David pero mis amigos suelen llamarme "Rodo".
+                        Estudio
+                        Ingeriería de Computación e Informática, soy programador junior y músico. Actualmente estoy
+                        cursando
+                        el
+                        tercer ciclo de mi carrera.</p>
+                    <p class="text">Estudiante de EPICI-UNPRG</p>
                 </div>
+
+                <div class="container grid-3">
+                    <div>
+                        <a class="icon"
+                            href="https://www.youtube.com/channel/UCLRVVeS4_7g9XhH6I-8cK5A?view_as=subscriber"
+                            target="_blank">
+                            <i class="fab fa-youtube fa-5x"></i>
+                        </a>
+                        <h3>Youtube</h3>
+                        <div>
+                            Canal Musical
+                        </div>
+                    </div>
+
+                    <div>
+                        <a class="icon" href="https://web.facebook.com/davibgb" target="_blank">
+                            <i class="fab fa-facebook fa-5x"></i>
+                        </a>
+                        <h3>Facebook</h3>
+                        <div>
+                            ¡Agrégame!
+                        </div>
+                    </div>
+
+                    <div>
+                        <a class="icon" href="https://www.instagram.com/jdavidgonzales25/" target="_blank">
+                            <i class="fab fa-instagram fa-5x"></i>
+                        </a>
+                        <h3>Instagram</h3>
+                        <div>
+                            ¡Sígueme!
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-
-        </div>
-
-    </div>
-
-    <!--Horario-->
-    <section class="horario bg-light">
-        <div class="container text-center">
-            <div class="grid-2">
+        </section>
+        <!--Horario-->
+        <section class="horario bg-light">
+            <div class="container grid-2 text-center">
                 <div class="icon-horario">
                     <i class="fas fa-calendar fa-10x"></i>
                 </div>
 
                 <div>
                     <h1 class="title"><span>MI HORARIO</span></h1>
-                    <table class="text-table" cellpadding="10" cellspacing="10">
-                        <tr>
-                            <th bgcolor="#cfcfcf">Hora</th>
-                            <th>Lunes</th>
-                            <th>Martes</th>
-                            <th>Miércoles</th>
-                            <th>Jueves</th>
-                            <th>Viernes</th>
-                            <th>Sábado</th>
-                            <th>Domingo</th>
-                        </tr>
-                        <tr>
-                            <td>10AM - 11AM</td>
-                            <td align="center" colspan="2">Ejercicios</td>
-                            <td colspan="3"></td>
-                            <td colspan="2">Ejercicios</td>
-                        </tr>
-                        <tr>
-                            <td>11AM - 2PM</td>
-                            <td colspan="3" rowspan="2">Practicar Inglés</td>
-                            <td rowspan="2">Ayunas y Ejercicios</td>
-                            <td colspan="2" rowspan="2">Practicar Inglés</td>
-                        </tr>
-                        <tr>
-                            <td>2PM - 3PM</td>
-                            <td>Lectura Libre</td>
-                        </tr>
-                        <tr>
-                            <td>4PM - 6PM</td>
-                            <td rowspan="3">Encode</td>
-                            <td>EBI</td>
-                            <td colspan="2" rowspan="3">Encode</td>
-                            <td>CBU-UNPRG</td>
-                            <td>Free</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>6PM - 8PM</td>
-                            <td></td>
-                            <td rowspan="2">Lectura</td>
-                            <td rowspan="2"></td>
-                            <td rowspan="2">Inglés</td>
-                        </tr>
-                        <tr>
-                            <td>8PM - 11PM</td>
-                            <td>JDL</td>
-                        </tr>
+                    <table class="table" cellpadding="8" cellspacing="8">
+                        <thead>
+                            <tr>
+                                <th bgcolor="#cfcfcf">Hora</th>
+                                <th>Lunes</th>
+                                <th>Martes</th>
+                                <th>Miércoles</th>
+                                <th>Jueves</th>
+                                <th>Viernes</th>
+                                <th>Sábado</th>
+                                <th>Domingo</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>10AM - 11AM</td>
+                                <td align="center" colspan="2">Ejercicios</td>
+                                <td colspan="3"></td>
+                                <td colspan="2">Ejercicios</td>
+                            </tr>
+                            <tr>
+                                <th>11AM - 2PM</td>
+                                <td colspan="3" rowspan="2">Practicar Inglés</td>
+                                <td rowspan="2">Ayunas y Ejercicios</td>
+                                <td colspan="2" rowspan="2">Practicar Inglés</td>
+                            </tr>
+                            <tr>
+                                <th>2PM - 3PM</td>
+                                <td>Lectura Libre</td>
+                            </tr>
+                            <tr>
+                                <th>4PM - 6PM</td>
+                                <td rowspan="3">Encode</td>
+                                <td>EBI</td>
+                                <td colspan="2" rowspan="3">Encode</td>
+                                <td>CBU-UNPRG</td>
+                                <td>Free</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>6PM - 8PM</td>
+                                <td></td>
+                                <td rowspan="2">Lectura</td>
+                                <td rowspan="2"></td>
+                                <td rowspan="2">Inglés</td>
+                            </tr>
+                            <tr>
+                                <th>8PM - 11PM</td>
+                                <td>JDL</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--Videos-->
+        </section>
+        <!--Videos-->
 
-    <section>
-        <div class="container grid-2">
-            <div class="video grid-2">
-                <div>
-                    <h1 class="title"><span>MIS VIDEOS</span></h1>
-                    <div class="video1">
-                        <iframe src="https://www.youtube.com/embed/Pf4lF2ShCUY" allowfullscreen
-                            frameborder="10"></iframe>
-                    </div>
-                    <div class="video2">
-                        <iframe src="https://www.youtube.com/embed/i90sEt7HqqY" allowfullscreen
-                            frameborder="10"></iframe>
+        <section class="video bg-dark">
+            <h3 class="title">MIS VIDEOS</h3>
+            <div class="container grid-2">
+                <div class="video">
+                    <div>
+                        <div class="videoYT">
+                            <iframe src="https://www.youtube.com/embed/Pf4lF2ShCUY" width="640" height="400"
+                                allowfullscreen frameborder="0"></iframe>
+
+                            <iframe src="https://www.youtube.com/embed/i90sEt7HqqY" width="640" height="400"
+                                allowfullscreen frameborder="0"></iframe>
+                        </div>
                     </div>
                 </div>
+
+                <div class="icon-video">
+                    <i class="fas fa-video fa-10x"></i>
+                </div>
             </div>
-
-            <div class="icon-video">
-                <i class="fas fa-video fa-10x"></i>
+        </section>
+        <!-- Formulario -->
+        <section class="formulario text-center bg-light">
+            <div class="container">
+                <h3 class="title">HABLEMOS...</h3>
+                <!--Carita-->
+                <i class="fas fa-smile-beam fa-5x"></i>
+                <form class="formulario text-center">
+                    <input name="nombre" placeholder="Nombre" type="text" required /><br />
+                    <input name="email" placeholder="Correo Electrónico" type="email" required /><br />
+                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                    <input type="submit" value="ENVIAR" class="enviar" />
+                </form>
             </div>
-        </div>
-    </section>
-    <!-- Formulario -->
-    <section class="formulario text-center bg-light">
-        <div>
-            <h1 class="title"><span>HABLEMOS...</span></h1>
-            <!--Carita-->
-            <i class="fas fa-smile-beam fa-5x"></i>
-            <form class="formulario text-center">
-                <input name="nombre" placeholder="Nombre" type="text" required /><br />
-                <input name="email" placeholder="Correo Electrónico" type="email" required /><br />
-                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-                <input type="submit" value="ENVIAR" class="enviar" />
-            </form>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="text-center">
-        <p> Webpage David Gonzales &copy; 2020 - Todos los derechos reservados
-        <p>
-    </footer>
+        </section>
+        <!-- Footer -->
+        <footer class="text-center bg-dark">
+            <p> Webpage David Gonzales &copy; 2020 - Todos los derechos reservados
+            <p>
+        </footer>
 
-
+    </div>
 </body>
 
 </html>
