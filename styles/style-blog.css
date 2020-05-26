@@ -187,13 +187,6 @@ body{
     margin: auto;
 }
 
-.form{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 100%;
-    outline: none;
-}
 .enviar {
     background-color: #333;
     padding: 12px 45px;
