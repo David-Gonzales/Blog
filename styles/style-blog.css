@@ -106,6 +106,31 @@ body{
 
 .tabla{
     padding: 2rem 2rem;
+
+}
+
+@media screen and (max-width:1000px){
+    table{
+        width:100%;
+        display: block;
+        overflow-x: auto;
+        font-size: 120%;
+    }
+    .icon-horario{
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px){
+    table{
+        width:100%;
+        display: block;
+        overflow-x: auto;
+        font-size: 90%;
+    }
+    .icon-horario{
+        display: none;
+    }
 }
 
 @media screen and (max-width:800px){
@@ -113,7 +138,44 @@ body{
         width:100%;
         display: block;
         overflow-x: auto;
-        font-size: 48%;
+        font-size: 90%;
+    }
+    .icon-horario{
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px){
+    table{
+        width:100%;
+        display: block;
+        overflow-x: auto;
+        font-size: 65%;
+    }
+    .icon-horario{
+        display: none;
+    }
+}
+@media screen and (max-width:600px){
+    table{
+        width:100%;
+        display: block;
+        overflow-x: auto;
+        font-size: 45%;
+    }
+    .icon-horario{
+        display: none;
+    }
+}
+@media screen and (max-width:500px){
+    table{
+        width:100%;
+        display: block;
+        overflow-x: auto;
+        font-size: 35%;
+    }
+    .icon-horario{
+        display: none;
     }
 }
 @media screen and (max-width:400px){
@@ -121,7 +183,10 @@ body{
         width:100%;
         display: block;
         overflow-x: auto;
-        font-size: 24%;
+        font-size: 23%;
+    }
+    .icon-horario{
+        display: none;
     }
 }
 
@@ -153,15 +218,6 @@ body{
 }
 
 @media screen and (max-width:800px){
-    .video{
-        width:100%;
-        display: block;
-    }
-    .icon-video{
-        display: none;
-    }
-}
-@media screen and (max-width:400px){
     .video{
         width:100%;
         display: block;
